@@ -1,0 +1,15 @@
+<div class="fibo-square"
+     [style.width]="fibo.data.fibo + 'px'"
+     [style.height]="fibo.data.fibo + 'px'"
+     [style.fontSize]="fibo.data.fibo / 5 + 'px'"
+     [style.lineHeight]="fibo.data.fibo + 'px'"
+     [class.left]="fibo.data.dir === 'left'"
+     [class.bottom]="fibo.data.dir === 'bottom'"
+     [class.right]="fibo.data.dir === 'right'"
+     [class.top]="fibo.data.dir === 'top'"
+>
+  {{fibo.data.fibo}}
+    <app-fibo-square *ngIf="fibo?.children" [fibo]="fibo.children"></app-fibo-square>
+<!--  <ng-content>-->
+<!--  </ng-content>-->
+</div>

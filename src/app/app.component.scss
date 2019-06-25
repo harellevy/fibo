@@ -1,0 +1,16 @@
+.fixed-content {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  z-index: 10;
+}
+.fibo-wrapper {
+  height: 0;
+  width: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  will-change: transform;
+  transition: transform 1s;
+  z-index: 9;
+}

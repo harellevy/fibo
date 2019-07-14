@@ -103,14 +103,6 @@ export class AppComponent {
     return value;
   }
 
-  fibo2(n) {
-    if (n <= 2) {
-      return 1;
-    } else {
-      return this.fibo(n - 1) + this.fibo(n - 2);
-    }
-  }
-
   originalHtml: string;
   make3dDom(): void {
     const STEP = 50, PERSPECTIVE = '5000';
